@@ -38,7 +38,6 @@ class listener(StreamListener):
 
             #This is optional, I saw it as a suggestion from a website.
             #grab the 'created_at' data from the Tweet to use for display
-            created_at = datajson['created_at']
             #print out a message to the screen that we have collected a tweet
             #print("Tweet collected at " + str(created_at))
 
