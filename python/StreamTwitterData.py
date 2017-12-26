@@ -9,6 +9,7 @@ from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener, json
 from pymongo import MongoClient
 from nltk.tokenize import TweetTokenizer
+from clean import cleanTweet
 
 
 consumerkey="cnV6zLTpFswKMIgpgvTfbae3g"
@@ -23,19 +24,26 @@ class listener(StreamListener):
         try:
             client = MongoClient('localhost',27017)
             # twitterdb is the new db that I created to store the tweets
-            db = client.twitterdatabase
+            db = client.clean_tweets
 
+            
             # Decode the JSON from Twitter
             datajson = json.loads(data)
+            #Get just the tweet
+            tweet = datajson['text']
+            # apply the cleaning function to the tweet
+            clean_tweet = cleanTweet(tweet)
+            # Python Object that would be save in the db.
+            pyObject = { 'text': clean_tweet, 'fullResponse': datajson }  
 
             #This is optional, I saw it as a suggestion from a website.
             #grab the 'created_at' data from the Tweet to use for display
             created_at = datajson['created_at']
             #print out a message to the screen that we have collected a tweet
-            print("Tweet collected at " + str(created_at))
+            #print("Tweet collected at " + str(created_at))
 
             #It will insert into 'tweets' collection the data that are streamed
-            db.tweets.insert(datajson)
+            db.tweets.insert(pyObject)
         except Exception as e:
            print(e)
 
@@ -45,5 +53,5 @@ class listener(StreamListener):
 auth=OAuthHandler(consumerkey,consumersecret)
 auth.set_access_token(accesskey,accesssecret)
 twitterStream=Stream(auth,listener())
-twitterStream.filter(track=['science'], locations=[-122.995004, 32.323198,-67.799695, 49.893813])
+twitterStream.filter(locations=[-122.995004, 32.323198,-67.799695, 49.893813])
 
