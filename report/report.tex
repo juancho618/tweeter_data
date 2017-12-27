@@ -26,6 +26,27 @@
     \setlength{\parindent}{0em}
     \setlength{\parskip}{1em} % length of the spacing
     
+    \definecolor{gray}{rgb}{0.4,0.4,0.4}
+    \definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+    \definecolor{cyan}{rgb}{0.0,0.6,0.6}
+    
+    \lstset{
+      basicstyle=\ttfamily,
+      columns=fullflexible,
+      showstringspaces=false,
+      commentstyle=\color{gray}\upshape
+    }
+    
+    \lstdefinelanguage{XML}
+    {
+      morestring=[b]",
+      morestring=[s]{>}{<},
+      morecomment=[s]{<?}{?>},
+      stringstyle=\color{black},
+      identifierstyle=\color{darkblue},
+      keywordstyle=\color{cyan},
+      morekeywords={xmlns,version,type}% list your attributes here
+    }
     \lstset{ % General setup for the package
         language=Python,
         basicstyle=\small\sffamily,
@@ -93,10 +114,18 @@
          
         \newpage         
         \section{Implementation Architecture}
-       In this project, we tried to go further with the implementation by combining concepts that we learned in previous courses of the master, such as Web technologies and Databases.  
+        In this project, we tried to go further with the implementation by combining concepts that we learned in previous courses of the master, such as Web technologies and Databases.  
         We tried to simulate in a "real case" environment, where several devices with different applications or different back-end (e.g. mobile application in Python and web application in Nodejs) are used to collect a specific information and save it in a pre-defined database.
 
-        In the Figure \ref{}, the global implementation that we used is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to recollect and save tweets in an MongoDB database. The idea behind this implementation is to illustrate how information could be retrieve from different sources and be processed as one data source.
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/architecture.jpg}
+            \setcaptioncitation{self-made}
+            \caption{Distributed Computing Implementation.}
+            \label{fig:architecture}
+        \end{figure}
+
+        In the Figure \ref{fig:architecture}, the global implementation that we used is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to recollect and save tweets in an MongoDB database. The idea behind this implementation is to illustrate how information could be retrieve from different sources and be processed as one data source.
         Consequently, the information is saved in a MongoDB database in an Amazon Web Server that is later connected with Hadoop distributed storage.
 
         At the same time, in Amazon Web server are three EC2 instances running with Hadoop with one NameNode as a master, assigning work to two slave nodes working as DataNodes to process the MapReduce task in parallel. Finally to create the MapReduce job, PIG framework (cite??) was implemented and installed in the name node as high-level platform which allows to use MapReduce tasks in a simple way, implementing a familiar SQL syntax.
@@ -118,7 +147,7 @@
 
         The data preprocessing part is made by a function that receives the streamed tweet from the Twitter API and it tokenizes the tweet in words, to later remove the stop words, special characters, links, re-tweets and user tags. This step is required in order to extract the main words that potentially represent the meaning or topic of the tweet. Aditionally, Lemmatization is applied in the line \textit{13} to convert every word to the root 
         form, with the goal of grouping all the words that could semantically mean the same.
-        \begin{lstlisting}[language=Python, caption= Tweet cleaning function, label={lst:dataCleaning}]
+        \begin{lstlisting}[language=Python, caption= Python Cleaning Function, label={lst:dataCleaning}]
             def cleanTweet(tweet):    
                 wordnet_lemmatizer = WordNetLemmatizer()
                 stop = set(stopwords.words('english'))
@@ -150,9 +179,78 @@
             \begin{itemize}
                 \item \textbf{hadoop-env.sh:} This file contains some environment variable settings used by Hadoop. Frequenly use these to modify some aspects of Hadoop daemon behavior, such as where log files are stored, the maximum amount of heap used etc.                
                 \item \textbf{core-site.xml:} contains the configuration of the name node and the temporal folder where the data is stored during the MapReduce process.
+                \begin{lstlisting}[language=XML, caption= core-site.xml, label={lst:core}]
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+                    <configuration>
+                    <property>
+                      <name>fs.default.name</name>
+                      <value>hdfs://namenode:8020</value>
+                    </property>
+                    <property>
+                      <name>hadoop.tmp.dir</name>
+                      <value>/home/ubuntu/hdfstmp</value>
+                    </property>
+                  </configuration>
+                \end{lstlisting}
                 \item \textbf{hdfs-site.xml:} contains the configuration for HDFS daemons, the NameNode, SecondaryNameNode  and data nodes.
+                    \begin{lstlisting}[language=XML, caption= hdfs-site.xml, label={lst:hdfs}]
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+                        <configuration>
+                        <property>
+                          <name>dfs.replication</name>
+                          <value>2</value>
+                        </property>
+                        <property>
+                          <name>dfs.permissions</name>
+                          <value>false</value>
+                        </property>
+                      </configuration>
+                    \end{lstlisting}
                 \item \textbf{mapred-site.xml:} contains the configuration settings for MapReduce daemons; it only need to specify in Hadoop that the yarn framework will be use for the map‐reduce jobs.
+                    \begin{lstlisting}[language=XML, caption= mapred-site.xml, label={lst:mapred}]
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+                        <configuration>
+                        <property>
+                          <name>mapreduce.framework.name</name>
+                          <value>yarn</value>
+                        </property>
+                      </configuration>                      
+                \end{lstlisting}
                 \item \textbf{yarn-site.xml:} the properties in this file specify where the ResourceManager is running so that other processes can connect to it.
+                    \begin{lstlisting}[language=XML, caption= yarn-site.xml, label={lst:yarn}]
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+                        <configuration>
+                        <!-- Site specific YARN configuration properties -->
+                          <property>
+                            <name>yarn.resourcemanager.resource-tracker.address</name>
+                            <value>172.31.19.73:8031</value>
+                          </property>
+                          <property>
+                            <name>yarn.resourcemanager.address</name>
+                            <value>172.31.19.73:8032</value>
+                          </property>
+                          <property>
+                            <name>yarn.resourcemanager.scheduler.address</name>
+                            <value>172.31.19.73:8030</value>
+                          </property>
+                          <property>
+                            <name>yarn.resourcemanager.admin.address</name>
+                            <value>172.31.19.73:8033</value>
+                          </property>
+                          <property>
+                            <name>yarn.resourcemanager.webapp.address</name>
+                            <value>172.31.19.73:8088</value>
+                          </property>
+                          <property>
+                            <name>yarn.nodemanager.aux‐services</name>
+                            <value>mapreduce_shuffle</value>
+                          </property>
+                        </configuration>                     
+                \end{lstlisting}
             \end{itemize}
         All the configuration files could be find in the github repository .....
         \begin{figure}[H]
