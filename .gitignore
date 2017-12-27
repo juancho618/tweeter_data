@@ -1,2 +1,4 @@
 node_modules/*
 credentials.js
+python/__pychache__/*
+.vscode
