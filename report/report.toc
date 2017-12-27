@@ -1,9 +1,9 @@
 \contentsline {section}{\numberline {A}Introduction}{3}
-\contentsline {section}{\numberline {B}Implementation Architecture}{3}
-\contentsline {section}{\numberline {C}Application layer}{3}
-\contentsline {subsection}{\numberline {C.1}Data Pre-processing}{3}
-\contentsline {subsection}{\numberline {C.2}Twitter API Implementation}{4}
-\contentsline {section}{\numberline {D}Server Configuration}{4}
-\contentsline {section}{\numberline {E}MapReduce Job}{4}
-\contentsline {section}{\numberline {F}Job Results}{5}
-\contentsline {section}{\numberline {G}Conclusion}{5}
+\contentsline {section}{\numberline {B}Implementation Architecture}{4}
+\contentsline {section}{\numberline {C}Application layer}{4}
+\contentsline {subsection}{\numberline {C.1}Data Pre-processing}{4}
+\contentsline {subsection}{\numberline {C.2}Twitter API Implementation}{5}
+\contentsline {section}{\numberline {D}Server Configuration}{5}
+\contentsline {section}{\numberline {E}MapReduce Job}{5}
+\contentsline {section}{\numberline {F}Job Results}{7}
+\contentsline {section}{\numberline {G}Conclusion}{8}
