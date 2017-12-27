@@ -1,0 +1,10 @@
+#CareerArc	1957
+#Hiring	1821
+#job	1765
+#Jobs	644
+#Job	643
+#hiring!	560
+#hiring	341
+#job:	308
+#job?	261
+#Retail	165

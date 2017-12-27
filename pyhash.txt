@@ -1,0 +1,10 @@
+#job	3020
+#hiring	2706
+#careerarc	1899
+#jobs	591
+#retail	314
+#hospitality	213
+#healthcare	164
+#nursing	159
+#sales	129
+#customerservice	128

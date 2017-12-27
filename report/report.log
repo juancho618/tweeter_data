@@ -1,1772 +1,427 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.15)  26 DEC 2017 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdftex 2017.11.11)  27 DEC 2017 11:52
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex"
-(/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-)
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 143.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count87
-))
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
-)
-\lst@mode=\count88
-\lst@gtempboxa=\box26
-\lst@token=\toks16
-\lst@length=\count89
-\lst@currlwidth=\dimen103
-\lst@column=\count90
-\lst@pos=\count91
-\lst@lostspace=\dimen104
-\lst@width=\dimen105
-\lst@newlines=\count92
-\lst@lineno=\count93
-\lst@maxwidth=\dimen106
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count94
-\lst@skipnumbers=\count95
-\lst@framebox=\box27
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
-))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 95.
-)
-\Gin@req@height=\dimen107
-\Gin@req@width=\dimen108
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen109
-\captionmargin@=\dimen110
-\captionwidth=\dimen111
-\caption@tempdima=\dimen112
-\caption@indent=\dimen113
-\caption@parindent=\dimen114
-\caption@hangindent=\dimen115
-)
-\c@ContinuedFloat=\count96
-Package caption Info: listings package is loaded.
-)
-\c@subfigure=\count97
-\c@subtable=\count98
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count99
-\Gm@cntv=\count100
-\c@Gm@tempcnt=\count101
-\Gm@bindingoffset=\dimen116
-\Gm@wd@mp=\dimen117
-\Gm@odd@mp=\dimen118
-\Gm@even@mp=\dimen119
-\Gm@layoutwidth=\dimen120
-\Gm@layoutheight=\dimen121
-\Gm@layouthoffset=\dimen122
-\Gm@layoutvoffset=\dimen123
-\Gm@dimlist=\toks17
-)
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count102
-\float@exts=\toks18
-\float@box=\box28
-\@float@everytoks=\toks19
-\@floatcapt=\box29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count103
-\c@Blindtext=\count104
-\c@blind@countparstart=\count105
-\blind@countxx=\count106
-\blindtext@numBlindtext=\count107
-\blind@countyy=\count108
-\c@blindlist=\count109
-\c@blindlistlevel=\count110
-\c@blindlist@level=\count111
-\blind@listitem=\count112
-\c@blind@listcount=\count113
-\c@blind@levelcount=\count114
-\blind@mathformula=\count115
-\blind@Mathformula=\count116
-\c@blind@randomcount=\count117
-\c@blind@randommax=\count118
-\c@blind@pangramcount=\count119
-\c@blind@pangrammax=\count120
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (./report.aux
-
-LaTeX Warning: Label `lst:dataCleaning' multiply defined.
-
-)
-\openout1 = `report.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen124
-\scratchbox=\box30
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen125
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
-\everyMPtoPDFconversion=\toks21
-)
-\c@lstlisting=\count127
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=483.69684pt
-* \textheight=731.23582pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-<./img/vub.png, id=1, 542.025pt x 368.87813pt>
-File: ./img/vub.png Graphic file (type png)
- <use ./img/vub.png>
-Package pdftex.def Info: ./img/vub.png used on input line 53.
-(pdftex.def)             Requested size: 241.84842pt x 164.59209pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/vub.png>] (./report.
-toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write3
-\openout3 = `report.toc'.
-
- [1] (./report.lof)
-\tf@lof=\write4
-\openout4 = `report.lof'.
-
-
-[2]
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 93.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:122: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...            stop = set(stopwords.words('e
-                                                  nglish'))
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:122: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...    stop = set(stopwords.words('english')
-                                                  )
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:122: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...    stop = set(stopwords.words('english')
-                                                  )
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128                         f = re.sub(r'[
-                                            .,"!~_:|?]+', '', f,flags=re.MUL...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128                         f = re.sub(r'[
-                                            .,"!~_:|?]+', '', f,flags=re.MUL...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128                         f = re.sub(r'[.,"!~_
-                                                  :|?]+', '', f,flags=re.MUL...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 ...                    f = re.sub(r'[.,"!~_:
-                                                  |?]+', '', f,flags=re.MULT...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 ...              f = re.sub(r'[.,"!~_:|?]+',
-                                                   '', f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 128
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 128.
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbar' on input line 128.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 ...              f = re.sub(r'[.,"!~_:|?]+',
-                                                   '', f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 ...          f = re.sub(r'[.,"!~_:|?]+', '',
-                                                   f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:128: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 ...          f = re.sub(r'[.,"!~_:|?]+', '',
-                                                   f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:129: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...           f = re.sub(url_expression, '',
-                                                   f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:129: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...           f = re.sub(url_expression, '',
-                                                   f,flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@
-                                            [a-z,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@
-                                            [a-z,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[
-                                             a-z,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[a
-                                              -z,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[a-
-                                               z,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[a-z
-                                                ,A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[a-z,
-                                                 A-Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130                         f = re.sub(r'@[a-z,A
-                                                  -Z,0-9 ]*', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...                    f = re.sub(r'@[a-z,A-
-                                                  Z,0-9 ]*', '', f, flags=re...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...                   f = re.sub(r'@[a-z,A-Z
-                                                  ,0-9 ]*', '', f, flags=re....
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...                  f = re.sub(r'@[a-z,A-Z,
-                                                  0-9 ]*', '', f, flags=re.M...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...              f = re.sub(r'@[a-z,A-Z,0-9 
-                                                  ]*', '', f, flags=re.MULTI...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...              f = re.sub(r'@[a-z,A-Z,0-9 
-                                                  ]*', '', f, flags=re.MULTI...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...          f = re.sub(r'@[a-z,A-Z,0-9 ]*',
-                                                   '', f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...          f = re.sub(r'@[a-z,A-Z,0-9 ]*',
-                                                   '', f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...      f = re.sub(r'@[a-z,A-Z,0-9 ]*', '',
-                                                   f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:130: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 ...      f = re.sub(r'@[a-z,A-Z,0-9 ]*', '',
-                                                   f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'R
-                                            T @[a-z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'R
-                                            T @[a-z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'RT 
-                                              @[a-z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'RT 
-                                              @[a-z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'RT @[
-                                                a-z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'RT @[a
-                                                 -z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131                         f = re.sub(r'RT @[a-
-                                                  z,A-Z]*: ', '', f, flags=r...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...                    f = re.sub(r'RT @[a-z
-                                                  ,A-Z]*: ', '', f, flags=re...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...                   f = re.sub(r'RT @[a-z,
-                                                  A-Z]*: ', '', f, flags=re....
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...                  f = re.sub(r'RT @[a-z,A
-                                                  -Z]*: ', '', f, flags=re.M...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...                 f = re.sub(r'RT @[a-z,A-
-                                                  Z]*: ', '', f, flags=re.MU...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...                f = re.sub(r'RT @[a-z,A-Z
-                                                  ]*: ', '', f, flags=re.MUL...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...               f = re.sub(r'RT @[a-z,A-Z]
-                                                  *: ', '', f, flags=re.MULT...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...            f = re.sub(r'RT @[a-z,A-Z]*: 
-                                                  ', '', f, flags=re.MULTILINE)
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...            f = re.sub(r'RT @[a-z,A-Z]*: 
-                                                  ', '', f, flags=re.MULTILINE)
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...          f = re.sub(r'RT @[a-z,A-Z]*: ',
-                                                   '', f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...      f = re.sub(r'RT @[a-z,A-Z]*: ', '',
-                                                   f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:131: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...      f = re.sub(r'RT @[a-z,A-Z]*: ', '',
-                                                   f, flags=re.MULTILINE)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3]
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:135: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135                 return(" 
-                               ".join(clean_fragments))
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:135: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135                 return(" 
-                               ".join(clean_fragments))
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:135: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135                 return(" ".
-                                 join(clean_fragments))
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `' on page 4 undefined on input line 145.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-
-<./img/instances.png, id=26, 1317.92375pt x 134.5025pt>
-File: ./img/instances.png Graphic file (type png)
-
-<use ./img/instances.png>
-Package pdftex.def Info: ./img/instances.png used on input line 159.
-(pdftex.def)             Requested size: 483.69684pt x 49.36287pt.
-
-
-LaTeX Warning: Reference `' on page 4 undefined on input line 171.
-
-[4 <./img/instances.png>]
-Overfull \hbox (32.45486pt too wide) in paragraph at lines 175--176
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-
-Overfull \hbox (26.90485pt too wide) in paragraph at lines 176--177
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-
-Overfull \hbox (32.45486pt too wide) in paragraph at lines 177--179
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/
-                                home/ubuntu/distributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/h
-                                 ome/ubuntu/distributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/home/
-                                     ubuntu/distributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/home/ub
-                                       untu/distributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/home/ubuntu/
-                                            distributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179             data = LOAD '/home/ubuntu/d
-                                             istributedComputing/tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ... LOAD '/home/ubuntu/distributedComputing/
-                                                  tweets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...LOAD '/home/ubuntu/distributedComputing/t
-                                                  weets.bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 .../home/ubuntu/distributedComputing/tweets.
-                                                  bson'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...home/ubuntu/distributedComputing/tweets.b
-                                                  son'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 .../ubuntu/distributedComputing/tweets.bson'
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:179: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 .../ubuntu/distributedComputing/tweets.bson'
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...     com.mongodb.hadoop.pig.BSONLoader('f
-                                                  ullResponse','text') AS (t...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...odb.hadoop.pig.BSONLoader('fullResponse',
-                                                  'text') AS (text:chararray);
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...odb.hadoop.pig.BSONLoader('fullResponse',
-                                                  'text') AS (text:chararray);
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...b.hadoop.pig.BSONLoader('fullResponse','t
-                                                  ext') AS (text:chararray);
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...oop.pig.BSONLoader('fullResponse','text')
-                                                   AS (text:chararray);
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:181: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 ...oop.pig.BSONLoader('fullResponse','text')
-                                                   AS (text:chararray);
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (32.45486pt too wide) in paragraph at lines 181--183
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][] 
- []
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ..._filter = FILTER ordered BY $0 MATCHES '.
-                                                  *\\#\\p{Alpha}.*?';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ... = FILTER ordered BY $0 MATCHES '.*\\#\\p
-                                                  {Alpha}.*?';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...= FILTER ordered BY $0 MATCHES '.*\\#\\p{
-                                                  Alpha}.*?';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ... FILTER ordered BY $0 MATCHES '.*\\#\\p{A
-                                                  lpha}.*?';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...ER ordered BY $0 MATCHES '.*\\#\\p{Alpha}
-                                                  .*?';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...dered BY $0 MATCHES '.*\\#\\p{Alpha}.*?';
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:189: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...dered BY $0 MATCHES '.*\\#\\p{Alpha}.*?';
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193             STORE top_hash INTO '/
-                                        home/ubuntu/pig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193             STORE top_hash INTO '/h
-                                         ome/ubuntu/pig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193             STORE top_hash INTO '/home/
-                                             ubuntu/pig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193             STORE top_hash INTO '/home/ub
-                                               untu/pig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...       STORE top_hash INTO '/home/ubuntu/
-                                                  pig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...      STORE top_hash INTO '/home/ubuntu/p
-                                                  ig/scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...   STORE top_hash INTO '/home/ubuntu/pig/
-                                                  scripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...  STORE top_hash INTO '/home/ubuntu/pig/s
-                                                  cripts/top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ... top_hash INTO '/home/ubuntu/pig/scripts/
-                                                  top_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...top_hash INTO '/home/ubuntu/pig/scripts/t
-                                                  op_10_hash';
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...O '/home/ubuntu/pig/scripts/top_10_hash';
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:193: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 ...O '/home/ubuntu/pig/scripts/top_10_hash';
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194             STORE top_words INTO '/
-                                         home/ubuntu/pig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194             STORE top_words INTO '/h
-                                          ome/ubuntu/pig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194             STORE top_words INTO '/home/
-                                              ubuntu/pig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194             STORE top_words INTO '/home/ub
-                                                untu/pig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...      STORE top_words INTO '/home/ubuntu/
-                                                  pig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...     STORE top_words INTO '/home/ubuntu/p
-                                                  ig/scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...  STORE top_words INTO '/home/ubuntu/pig/
-                                                  scripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ... STORE top_words INTO '/home/ubuntu/pig/s
-                                                  cripts/top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...top_words INTO '/home/ubuntu/pig/scripts/
-                                                  top_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...op_words INTO '/home/ubuntu/pig/scripts/t
-                                                  op_10_words'
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...O '/home/ubuntu/pig/scripts/top_10_words'
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:194: 
-LaTeX Error: Undefined color `deepgreen'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...O '/home/ubuntu/pig/scripts/top_10_words'
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/juan/Documents/Distributed Computing/twitter_data/report/report.tex:202: 
-You can't use `macro parameter character #' in horizontal mode.
-l.202 ... the words that start by the character "#
-                                                  " to
+**report.tex
+(./report.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  {report}
+? 
+! Interruption.
+<to be read again> 
+                   {
+l.1 \documentclass{
+                   report}
+? 
+! Undefined control sequence.
+l.2     \usepackage
+                   {amssymb}
+? q
+OK, entering \batchmode...
+! Undefined control sequence.
+l.3     \usepackage
+                   {color}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4     \usepackage
+                   {listings}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5     \usepackage
+                   {graphicx}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6     \usepackage
+                   {subcaption}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7     \usepackage
+                   {geometry}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8     \usepackage
+                   {float}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9     \usepackage
+                   {caption}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10     \usepackage
+                    {blindtext}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11     \geometry
+                  {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17     \DeclareCaptionFormat
+                              {citation}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19       \captioncitation
+                           \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.21     #
+          1#2#3\par}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-(./report.bbl [5]) [6] (./report.aux)
+! You can't use `macro parameter character #' in horizontal mode.
+l.21     #1#
+            2#3\par}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+! You can't use `macro parameter character #' in horizontal mode.
+l.21     #1#2#
+              3\par}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Undefined control sequence.
+l.22  \newcommand
+                 *\setcaptioncitation[1]{\def\captioncitation{\textit{Source...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22  \newcommand*\setcaptioncitation
+                                     [1]{\def\captioncitation{\textit{Source...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \captioncitation.
+<to be read again> 
+                   1
+l.22 ...]{\def\captioncitation{\textit{Source:}~#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.24  \captionsetup
+                   {format=citation,justification=centering}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26     \setlength
+                   {\parindent}{0em}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.26     \setlength{\parindent}
+                               {0em}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.26     \setlength{\parindent}
+                               {0em}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.27     \setlength
+                   {\parskip}{1em} % length of the spacing
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.27     \setlength{\parskip}
+                             {1em} % length of the spacing
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.27     \setlength{\parskip}
+                             {1em} % length of the spacing
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.29     \lstset
+                { % General setup for the package
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31         basicstyle=\small
+                              \sffamily,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31         basicstyle=\small\sffamily
+                                       ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33         numberstyle=\tiny
+                              ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40         commentstyle=\color
+                                {red},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41         keywordstyle=\color
+                                {blue},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42         emphstyle=\ttb
+                           \color{deepred},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42         emphstyle=\ttb\color
+                                 {deepred},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43         stringstyle=\color
+                               {deepgreen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (23.02368pt too wide) in paragraph at lines 30--45
+\tenrm show-stringspaces=false, showtabs=false, keepspaces, com-mentstyle=red, 
+key-word-style=blue, emph-style=deepred,|
 
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm s
+.\tenrm h
+.\tenrm o
+.\kern-0.27779
+.\tenrm w
+.etc.
 
-LaTeX Warning: There were multiply-defined labels.
+! Undefined control sequence.
+l.46     \begin
+               {document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- ) 
-Here is how much of TeX's memory you used:
- 5148 strings out of 493029
- 77166 string characters out of 6136233
- 184835 words of memory out of 5000000
- 8602 multiletter control sequences out of 15000+600000
- 11217 words of font info for 43 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,7n,42p,350b,1670s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
-Output written on report.pdf (7 pages, 184748 bytes).
+! Undefined control sequence.
+l.48     \begin
+               {titlepage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49         \begin
+                   {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50             \vspace
+                        *{1cm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51             \begin
+                       {figure}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53                 \includegraphics
+                                     [width=0.5\linewidth]{./img/vub.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.53                 \includegraphics[
+                                      width=0.5\linewidth]{./img/vub.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.53                 \includegraphics[
+                                      width=0.5\linewidth]{./img/vub.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.53 ...      \includegraphics[width=0.5\linewidth
+                                                  ]{./img/vub.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on report.pdf (1 page, 19073 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 12 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

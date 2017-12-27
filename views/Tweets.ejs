@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="/app/app.js"></script>
+        <script src="/app/dataController.js"></script>
+        <style>
+            body {
+                padding: 80px 30px;
+            }
+        </style>
+    </head>
+
+    <body ng-app="dcApp" ng-controller="dataCtrl">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i> Top 10 Hashtag & Words
+            </a>
+        </nav>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="btn-group">
+                    <button  type="button" class="btn" ng-class="{'btn-primary': active == 'jswords'}" ng-click="request('jswords')">Top words with noise</button>
+                    <button type="button" class="btn" ng-class="{'btn-primary': active == 'jshash'}" ng-click="request('jshash')">Top hashtag with noise</button>
+                    <button type="button" class="btn" ng-class="{'btn-primary': active == 'pywords'}" ng-click="request('pywords')">Top words without noise</button>
+                    <button type="button" class="btn"  ng-class="{'btn-primary': active == 'pyhash'}" ng-click="request('pyhash')">Top hashtag without noise</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <main id="main" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-3" ng-repeat="t in top">
+                    <div class="card" ng-repeat="(key,value) in t">
+                        <div class="card-header">
+                            Word # {{$parent.$index +1}} <span style="font-weight: bold;">({{key}})</span>
+                        </div>
+    
+                        <div class="card-body">
+                            <!-- <h4 class="card-title">The word is present {{value}} times in the 24099 tweets</h4> -->
+                            <blockquote class="blockquote mb-0">
+                                <p>The word is present <span style="font-weight: bold;">{{value}}</span> times in <span style="font-weight: bold;">{{total}}</span> tweets</p>
+                                <!-- <footer class="blockquote-footer">Person <cite title="Source Title">@tweeter_account</cite></footer> -->
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>                
+            </div>
+        </main>
+    </body>
+</html>

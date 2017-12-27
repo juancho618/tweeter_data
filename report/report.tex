@@ -42,6 +42,23 @@
         emphstyle=\ttb\color{deepred},    
         stringstyle=\color{deepgreen}
     }
+
+    \lstset{ % General setup for the package
+    language=Pig,
+    basicstyle=\small\sffamily,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=tb,
+    tabsize=4,
+    columns=fixed,
+    showstringspaces=false,
+    showtabs=false,
+    keepspaces,
+    commentstyle=\color{red},
+    keywordstyle=\color{blue},
+    emphstyle=\ttb\color{deepred},    
+    stringstyle=\color{deepgreen}
+}
     
     \begin{document}
 
@@ -85,12 +102,21 @@
 
 
         \section{Introduction}
+
         \section{Implementation Architecture}
         As part of the implementation, we tried to go further with the implementation, combining concepts learn in previous courses of the master, such as Web technologies and Databases.  
         Our simulation pretends to simulate a "real case" environment, where several devices with different applications or back-end (e.g. mobile application in Python and web application in Nodejs)
         are used to collect an specific information and saved it in a pre-defined database.
 
-        In the Figure \ref{} the global implementation is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to recollect and save tweets
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/architecture.jpg}
+            \setcaptioncitation{Self-made.}
+            \caption{Distributed Computing for Tweets Architecture.}
+            \label{fig:architecture}
+        \end{figure}
+
+        In the Figure \ref{fig:architecture} the global implementation is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to recollect and save tweets
         in an MongoDB database. The idea behind this implementation is to illustrate how information could be retrieve from different sources and be processed as one data source.
         Consequently, the information is save in a MongoDB database in an Amazon Web Server that would be later connected with Hadoop distributed storage.
 
@@ -161,6 +187,7 @@
             \caption{AWS instances.}
             \label{fig:instances}
         \end{figure}
+
         \section{MapReduce Job}
 
         To build the MapReduce Job, Apache Pig was used to take advantage of it easy SQL oriented approach to program, increasing the productivity and friendly for programmers that have not use Java before.
@@ -171,7 +198,7 @@
         In the listing \ref{} is provided the job use to calculate the top ten used words and the top ten hashtags. From a global overview, the COUNT in Apache Pig is equivalent to a reduce and the Filter is translated to a map.
         Additionally the tokenize also represent a  map function that split a string of words into a bag of words.
 
-        \begin{lstlisting}[caption= Tweet cleaning function, label={lst:dataCleaning}]
+        \begin{lstlisting}[language=Pig, caption= Tweet cleaning function, label={lst:dataCleaning}]
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-java-driver-3.6.0.jar;
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-hadoop-pig-2.0.2.jar;
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-hadoop-core-2.0.2.jar;
@@ -199,7 +226,7 @@
         the BSON file from the database is loaded and the tweet is saved as "text". In the following lines, the tokenize divides the tweets into words (map) to consequently group them.
         From that point it is needed to count the amount of times that a word is present in the all the tweets, using COUNT (filter).
         
-        With the pair word and number of repetitions of the word, is just matter of order them in descended order to identify the top ten words and filter (reduce) all the words that start by the character "#" to 
+        With the pair word and number of repetitions of the word, is just matter of order them in descended order to identify the top ten words and filter (reduce) all the words that start by the character \# to 
         extract also the top ten hashtags.
 
         Finally with the STORE command, the results are locally saved in the server.
@@ -214,8 +241,8 @@
         \section{Job Results}
         \section{Conclusion}
 
-        \bibliography{report}
-        \bibliographystyle{ieeetr}
-        \nocite{*}
-
-    \end{document}
+      
+    \bibliography{report}
+    \bibliographystyle{ieeetr}
+    \nocite{*}
+\end{document}
