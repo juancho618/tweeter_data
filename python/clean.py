@@ -16,7 +16,8 @@ def cleanTweet(tweet):
     for f in framents:
         if f not in stop: # not included in the stop words
             f = f.lower() #lowercase fragment
-            f = re.sub(r'[.,"!~_:|?]+', '', f,flags=re.MULTILINE) # Special characters
+            f = re.sub(r'[.,"!~_:|?\']+', '', f,flags=re.MULTILINE) # Special characters
+            f =  re.sub(r'\.\.\.', '', f,flags=re.MULTILINE)) # 3 dots
             f = re.sub(url_expression, '', f,flags=re.MULTILINE) # links
             f = re.sub(r'@[a-z,A-Z,0-9 ]*', '', f, flags=re.MULTILINE) #clean at person references
             f = re.sub(r'RT @[a-z,A-Z]*: ', '', f, flags=re.MULTILINE) #Remove retweets
