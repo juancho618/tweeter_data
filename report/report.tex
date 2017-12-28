@@ -29,7 +29,9 @@
     \definecolor{gray}{rgb}{0.4,0.4,0.4}
     \definecolor{darkblue}{rgb}{0.0,0.0,0.6}
     \definecolor{cyan}{rgb}{0.0,0.6,0.6}
-    
+    \definecolor{lightgray}{rgb}{.9,.9,.9}
+	\definecolor{darkgray}{rgb}{.4,.4,.4}
+	\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
     \lstset{
       basicstyle=\ttfamily,
       columns=fullflexible,
@@ -53,6 +55,36 @@
       framesep=8pt,
       framerule=0pt,
     }
+    \lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/}{/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
     \lstset{ % General setup for the package
         language=Python,
         basicstyle=\small\sffamily,
@@ -218,8 +250,34 @@ twitterStream.filter(locations=[-122.995004, 32.323198,-67.799695, 49.893813])
 
 
         Implementation in Nodejs.....
-        
-        
+\begin{lstlisting}[language=Javascript, caption= JAvascript Implementation, label={lst:JavascriptImplementation}]        
+        const Twitter = require('twitter');
+const credentials = require('./credentials');
+const tweet = require('./tweet');
+const mongoose = require('mongoose');
+
+// Connection URL
+const url = 'mongodb://localhost:27017/distributedComputing';
+
+const client = new Twitter({
+    consumer_key: credentials.keys.api_key,
+    consumer_secret: credentials.keys.api_secret,
+    access_token_key: credentials.keys.access_token_key,
+    access_token_secret: credentials.keys.access_token_secret
+  });
+
+
+  let stream = client.stream('statuses/filter', {locations: '-122.995004, 32.323198, -67.799695, 49.893813'});
+  stream.on('data', (event) => {
+    console.log(event && event.text );
+    const tweetObject = new tweet( {
+        text: event.text,
+        fullResponse: event
+    });
+
+    tweetObject.save();
+  });
+          \end{lstlisting}
         \section{Server Configuration}
 
         As  explained in section "look up" and presented in the Figure \ref{}, the server consist of one NameNode and two DataNodes running in different Linux instances in Amazon Web Services.
@@ -403,7 +461,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \caption{Top Hashtag Dataset 2}
             \label{fig: Top Hashtag Dataset 2}
         \end{figure}
-		      
+	    \section{Group member contribution}
         \section{Conclusion}
 In this project, by using Twitter API we managed to have access to a large amount of tweets (27169 tweets retrieved using Python and 24099 tweets retrieved using Javascript). A very important step was the data cleaning since it leads to different results if the process is not done correctly. As it was also described in the project requirements, we splitted the raw data into meaningful components by taking only the root of the words, removing punctuation marks ecc.
 
