@@ -110,7 +110,7 @@
         \section{Introduction}
         The importance of Distributed Computing is increasing a lot nowadays. It refers to a large collaboration between networked processing units that allows for their processing capacity to be put at the service of a large problem. Many systems and applications are being distributed for a variety of reasons: fault-tolerance, processing performance, security as well as geographical spreading of the data or the problem requirements. 
         
-        In this project, we were asked to deploy an end-to-end big data harvesting and analysis chain which includes mining,processing and analysis of big data. The data that are being used, are taken from Twitter by using its public API to access them. These data, are tweets that represent million of opinions in many different topics. By deploying a Hadoop cluster and using MAP-REDUCE, we had to keep the most popular 10 hash-tags as well as to count the number of occurrences of each word in the dataset.
+        In this project, we were asked to deploy an end-to-end big data harvesting and analysis chain which includes mining,processing and analysis of big data. The data that are being used, are taken from Twitter by using its public API to access them. These data, are tweets that represent million of opinions in many different topics. By deploying a Hadoop cluster and using MAP-REDUCE, we had to keep the most popular 10 hash-tags and words used as well as to count the number of occurrences of each word in the dataset. 
          
         \newpage         
         \section{Implementation Architecture}
@@ -130,13 +130,13 @@
 
         At the same time, in Amazon Web server are three EC2 instances running with Hadoop with one NameNode as a master, assigning work to two slave nodes working as DataNodes to process the MapReduce task in parallel. Finally to create the MapReduce job, PIG framework (cite??) was implemented and installed in the name node as high-level platform which allows to use MapReduce tasks in a simple way, implementing a familiar SQL syntax.
 
-        Finally the results are stored in the NameNode server and displayed in a short HTML file(hopefully).
+        Finally the results are stored in the NameNode server and displayed in a simple HTML file.
 
         
         \section{Application layer}
 
         The application layer is related with the way how the data are retrieved and saved in the database by using Python and Javascript to access the Twitter API. In order to avoid the same implementation in two different programming languages,
-        we decided to implement the solutions in two different scenarios. One implementing JavaScript without data processing and a second solution with Python to with the respective data cleaning and preprocessing, to
+        we decided to implement the solutions in two different scenarios. One implementing JavaScript without data processing and a second solution with Python  with the respective data cleaning and preprocessing, to
         visualize how the results of the top ten words and hashtags may change with a "clean" and "noisy" data. This comparison would show clearly the importance of having clean data and the impact it might have to the final results if the data is not preproccessed before.
 
         The code implemented for the Python implementation can be find in the github repository: % add description?
@@ -169,8 +169,11 @@
         \subsection{Twitter API Implementation}
 
         Implementation in Python....
+        
 
         Implementation in Nodejs.....
+        
+        
         \section{Server Configuration}
 
         As  explained in section "look up" and presented in the Figure \ref{}, the server consist of one NameNode and two DataNodes running in different Linux instances in Amazon Web Services.
@@ -263,8 +266,15 @@
 
         \section{MapReduce Job}
 
-MapReduce is a framework that is used to process large amount of data in a distributed fashion over several machines. The core idea that stands behind MapReduce is mapping the data into a collection of <key,value> pairs and then reducing over all pairs with the same key. If we would have to explain it in more detailed steps, we would say that in the beggining the framework will split the data into segments passing each segment to a differen machine. Each machine then runs the map script on the portion of the data attributed to it. As it is already mentioned above, the map script takes the input data and maps it to <key,value> pairs according to the specifications that we give. In our case, the map script consisted of <word,count> to be our <key,value> pairs. Here it is very important to mention that we do not have aggregation since this is the task of the reduce script. The emitted <key,value> pairs are then shuffled which means that pairs with the same key are grouped and passed to a single machine which will then run the reduce script over them. The reduce script will take the <key,values> pairs and 'reduce' them according to the specified reduce script. In our word count example, we want to count the number of word occurrencies so on our reduce script we simply sum the values of the collection <key;value> pairs which have the same key. This is shown in figure nr XXX. 
+MapReduce is a framework that is used to process large amount of data in a distributed fashion over several machines. The core idea that stands behind MapReduce is mapping the data into a collection of <key,value> pairs and then reducing over all pairs with the same key. If we would have to explain it in more detailed steps, we would say that in the beggining the framework will split the data into segments passing each segment to a differen machine. Each machine then runs the map script on the portion of the data attributed to it. As it is already mentioned above, the map script takes the input data and maps it to <key,value> pairs according to the specifications that we give. In our case, the map script consisted of <word,count> to be our <key,value> pairs. Here it is very important to mention that we do not have aggregation since this is the task of the reduce script. The emitted <key,value> pairs are then shuffled which means that pairs with the same key are grouped and passed to a single machine which will then run the reduce script over them. The reduce script will take the <key,values> pairs and 'reduce' them according to the specified reduce script. In our word count example, we want to count the number of word occurrencies so on our reduce script we simply sum the values of the collection <key;value> pairs which have the same key. This is shown in figure \ref{fig:MapReduce}. 
 
+\begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/MapReduce.png}
+            \setcaptioncitation{self-made}
+            \caption{MapReduce process.}
+            \label{fig:MapReduce}
+        \end{figure}
 
         To build the MapReduce Job, Apache Pig was used to take advantage of it easy SQL oriented approach to program, increasing the productivity and friendly for programmers that have not use Java before.
         Ten line of code in Pig Latin are equivalent almost to 200 lines of code in Java. (http://blog.cloudera.com/wp-content/uploads/2010/01/IntroToPig.pdf)
@@ -274,7 +284,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
         In the listing \ref{} is provided the job use to calculate the top ten used words and the top ten hashtags. From a global overview, the COUNT in Apache Pig is equivalent to a reduce and the Filter is translated to a map.
         Additionally the tokenize also represent a  map function that split a string of words into a bag of words.
 
-        \begin{lstlisting}[language=Pig, caption= Tweet cleaning function, label={lst:dataCleaning}]
+        \begin{lstlisting}[caption= Tweet cleaning function, label={lst:dataCleaning}]
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-java-driver-3.6.0.jar;
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-hadoop-pig-2.0.2.jar;
             REGISTER /home/ubuntu/hadoop/share/hadoop/common/lib/mongo-hadoop-core-2.0.2.jar;
