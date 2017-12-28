@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {C}Application layer}{5}
 \contentsline {subsection}{\numberline {C.1}Data Pre-processing}{5}
 \contentsline {subsection}{\numberline {C.2}Twitter API Implementation}{5}
-\contentsline {section}{\numberline {D}Server Configuration}{5}
-\contentsline {section}{\numberline {E}MapReduce Job}{7}
-\contentsline {section}{\numberline {F}Job Results}{9}
-\contentsline {section}{\numberline {G}Conclusion}{11}
+\contentsline {section}{\numberline {D}Server Configuration}{6}
+\contentsline {section}{\numberline {E}MapReduce Job}{8}
+\contentsline {section}{\numberline {F}Job Results}{10}
+\contentsline {section}{\numberline {G}Conclusion}{12}
