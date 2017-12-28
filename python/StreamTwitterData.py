@@ -12,7 +12,7 @@ from nltk.tokenize import TweetTokenizer
 from clean import cleanTweet
 
 
-consumerkey="cnV6zLTpFswKMIgpgvTfbae3g"
+consumerkey='cnV6zLTpFswKMIgpgvTfbae3g'
 consumersecret=	"EwGSB3GQZAMBHp2x883BZfpO3pBWirbVBu2NzhFkVmUOOGEF6Y"
 accesskey="804690952271044608-U1HO8J4UDTl5ygbfAhvWAoy4oPlmifM"
 accesssecret="xgks2gpw4wZFK7mqr12FcqaamHdXtdnYUabffFVAbThai"
