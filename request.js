@@ -1,7 +1,7 @@
 const Twitter = require('twitter');
 const credentials = require('./credentials');
 const tweet = require('./tweet');
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 // Connection URL
 const url = 'mongodb://localhost:27017/distributedComputing';
