@@ -430,8 +430,9 @@ MapReduce is a framework that is used to process large amount of data in a distr
         ** YARN is the architectural center of Hadoop that allows multiple data processing engines such as interactive SQL, real-time streaming, data science and batch processing to handle data stored 
         in a single platform, unlocking an entirely new approach to analytics.
         https://hortonworks.com/apache/yarn/
+		\pagebreak          
         \section{Job Results}
-		\pagebreak  
+        In figure \ref{fig: Top Words with Noise}, are shown on a screenshoot taken from a html file, the top 10 words that were retrieved from the un-processed data.
 		\begin{figure}[H]
             \centering 
             \includegraphics[width=1\linewidth]{./img/topwordswithnoise.jpeg}
@@ -439,7 +440,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \caption{Top Words with Noise}
             \label{fig: Top Words with Noise}
         \end{figure}
-        
+        In figure \ref{fig: Top Hashtag Dataset 1}, are shown the top 10 hashtags that were retrieved from the un-processed data.
         \begin{figure}[H]
             \centering 
             \includegraphics[width=1\linewidth]{./img/tophashtagdataset1.jpeg}
@@ -447,7 +448,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \caption{Top Hashtag Dataset 1}
             \label{fig: Top Hashtag Dataset 1}
         \end{figure}
-        
+        In figure \ref{fig: Top Words without Noise}, are shown the top 10 words that were retrieved from the pre-processed data.
         \begin{figure}[H]
             \centering 
             \includegraphics[width=1\linewidth]{./img/topwordswithoutnoise.jpeg}
@@ -455,7 +456,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \caption{Top Words without Noise}
             \label{fig: Top Words without Noise}
         \end{figure}
-        
+        In figure \ref{fig: Top Hashtag Dataset 2}, are shown the top 10 hashtags that were retrieved from the un-processed data.
         \begin{figure}[H]
             \centering 
             \includegraphics[width=1\linewidth]{./img/tophashtagdataset2.jpeg}
@@ -463,7 +464,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \caption{Top Hashtag Dataset 2}
             \label{fig: Top Hashtag Dataset 2}
         \end{figure}
-	    \section{Group member contribution}
+
         \section{Conclusion}
 In this project, by using Twitter API we managed to have access to a large amount of tweets (27169 tweets retrieved using Python and 24099 tweets retrieved using Javascript). A very important step was the data cleaning since it leads to different results if the process is not done correctly. As it was also described in the project requirements, we splitted the raw data into meaningful components by taking only the root of the words, removing punctuation marks ecc.
 
@@ -471,8 +472,8 @@ In this project, by using Twitter API we managed to have access to a large amoun
 
 To express more clearly the difference between having cleaned and uncleaned data, we decided to present two types of scenarios, one where we used JavaScript to retrieve the data and we did not preprocess them, and one where we used Python to retrieve and preprocess. The differences are shown clearly. When the data is unprocessed and we apply MAP-REDUCE, the result we get when we want to find the top 10 most used words and the number of times they are found, influences the effectiveness of the whole process since we get as a result stop words that does not express the core idea of the task. Meanwhile, when the data was preprocessed, the words that we got as a result were meaningful and they expressed exactly the most used words among all the tweet.
 
-
-      
+ \section{Group member contribution}
+ 
     \bibliography{report}
     \bibliographystyle{ieeetr}
     \nocite{*}

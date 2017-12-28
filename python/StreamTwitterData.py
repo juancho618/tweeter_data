@@ -9,7 +9,7 @@ from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener, json
 from pymongo import MongoClient
 from nltk.tokenize import TweetTokenizer
-from clean.py import cleanTweet
+from clean import cleanTweet
 
 
 consumerkey="cnV6zLTpFswKMIgpgvTfbae3g"
