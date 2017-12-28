@@ -37,6 +37,9 @@
       columns=fixed,
       showstringspaces=false,
       commentstyle=\color{gray}\upshape
+      frame=lr,
+      framesep=8pt,
+      framerule=0pt,
     }
     
     \lstdefinelanguage{XML}
@@ -48,6 +51,9 @@
       identifierstyle=\color{darkblue},
       keywordstyle=\color{cyan},
       morekeywords={xmlns,version,type}% list your attributes here
+      frame=lr,
+      framesep=8pt,
+      framerule=0pt,
     }
     \lstset{ % General setup for the package
         language=Python,
@@ -172,7 +178,46 @@
         \subsection{Twitter API Implementation}
 
         Implementation in Python....
-        
+        \begin{lstlisting}[language=Python, caption= Python Implementation, label={lst:PythonImplementation}]
+            class listener(StreamListener):
+
+    def on_data(self, data):
+        #This is the meat of the script...it connects to your mongoDB and stores the tweet
+        try:
+            client = MongoClient('localhost',27017)
+            # twitterdb is the new db that I created to store the tweets
+            db = client.clean_tweets
+
+            
+            # Decode the JSON from Twitter
+            datajson = json.loads(data)
+            #Get just the tweet
+            tweet = datajson['text']
+            # apply the cleaning function to the tweet
+            clean_tweet = cleanTweet(tweet)
+            # Python Object that would be save in the db.
+            pyObject = { 'text': clean_tweet, 'fullResponse': datajson }  
+
+            #This is optional, I saw it as a suggestion from a website.
+            #grab the 'created_at' data from the Tweet to use for display
+            #print out a message to the screen that we have collected a tweet
+            #print("Tweet collected at " + str(created_at))
+
+            #It will insert into 'tweets' collection the data that are streamed
+            db.tweets.insert(pyObject)
+        except Exception as e:
+           print(e)
+
+    def on_error(self, status):
+        print(status)
+
+auth=OAuthHandler(consumerkey,consumersecret)
+auth.set_access_token(accesskey,accesssecret)
+twitterStream=Stream(auth,listener())
+twitterStream.filter(locations=[-122.995004, 32.323198,-67.799695, 49.893813])
+
+        \end{lstlisting}
+
 
         Implementation in Nodejs.....
         
@@ -328,7 +373,39 @@ MapReduce is a framework that is used to process large amount of data in a distr
         in a single platform, unlocking an entirely new approach to analytics.
         https://hortonworks.com/apache/yarn/
         \section{Job Results}
-		\pagebreak        
+		\pagebreak  
+		\begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/topwordswithnoise.jpeg}
+            \setcaptioncitation{self-made}
+            \caption{Top Words with Noise}
+            \label{fig: Top Words with Noise}
+        \end{figure}
+        
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/tophashtagdataset1.jpeg}
+            \setcaptioncitation{self-made}
+            \caption{Top Hashtag Dataset 1}
+            \label{fig: Top Hashtag Dataset 1}
+        \end{figure}
+        
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/topwordswithoutnoise.jpeg}
+            \setcaptioncitation{self-made}
+            \caption{Top Words without Noise}
+            \label{fig: Top Words without Noise}
+        \end{figure}
+        
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/tophashtagdataset2.jpeg}
+            \setcaptioncitation{self-made}
+            \caption{Top Hashtag Dataset 2}
+            \label{fig: Top Hashtag Dataset 2}
+        \end{figure}
+		      
         \section{Conclusion}
 In this project, by using Twitter API we managed to have access to a large amount of tweets (27169 tweets retrieved using Python and 24099 tweets retrieved using Javascript). A very important step was the data cleaning since it leads to different results if the process is not done correctly. As it was also described in the project requirements, we splitted the raw data into meaningful components by taking only the root of the words, removing punctuation marks ecc.
 
