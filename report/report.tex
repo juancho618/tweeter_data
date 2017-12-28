@@ -150,16 +150,17 @@
         \begin{lstlisting}[language=Python, caption= Python Cleaning Function, label={lst:dataCleaning}]
             def cleanTweet(tweet):    
                 wordnet_lemmatizer = WordNetLemmatizer()
-                stop = set(stopwords.words('english'))
+                stop = set(stopwords.words('english')) #stop words!
                 framents = tknz.tokenize(tweet)
                 clean_fragments = []
                 for f in framents:
                     if f not in stop: # not included in the stop words
-                        f = f.lower() # lowercase word
-                        f = re.sub(r'[.,"!~_:|?]+', '', f,flags=re.MULTILINE)
-                        f = re.sub(url_expression, '', f,flags=re.MULTILINE) 
-                        f = re.sub(r'@[a-z,A-Z,0-9 ]*', '', f, flags=re.MULTILINE) 
-                        f = re.sub(r'RT @[a-z,A-Z]*: ', '', f, flags=re.MULTILINE) 
+                        f = f.lower() #lowercase fragment
+                        f = re.sub(r'[.,"!~_:|?\']+', '', f,flags=re.MULTILINE) # Special characters
+                        f =  re.sub(r'\.\.\.', '', f,flags=re.MULTILINE)) # 3 dots
+                        f = re.sub(url_expression, '', f,flags=re.MULTILINE) # links
+                        f = re.sub(r'@[a-z,A-Z,0-9 ]*', '', f, flags=re.MULTILINE) #clean at person references
+                        f = re.sub(r'RT @[a-z,A-Z]*: ', '', f, flags=re.MULTILINE) #Remove retweets
                         f = wordnet_lemmatizer.lemmatize(f)
                         if f:
                             clean_fragments.append(f)
