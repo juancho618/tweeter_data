@@ -2,9 +2,10 @@
 \contentsline {section}{\numberline {B}Implementation Architecture}{4}
 \contentsline {section}{\numberline {C}Application layer}{5}
 \contentsline {subsection}{\numberline {C.1}Data Pre-processing}{5}
-\contentsline {subsection}{\numberline {C.2}Twitter API Implementation}{5}
+\contentsline {subsection}{\numberline {C.2}Twitter API Implementation}{6}
 \contentsline {section}{\numberline {D}Server Configuration}{7}
 \contentsline {section}{\numberline {E}MapReduce Job}{9}
 \contentsline {section}{\numberline {F}Job Results}{11}
-\contentsline {section}{\numberline {G}Conclusion}{12}
-\contentsline {section}{\numberline {H}Group member contribution}{13}
+\contentsline {section}{\numberline {G}Conclusion}{13}
+\contentsline {section}{\numberline {H}Group member contribution}{14}
+\contentsline {section}{\numberline {I}Difficulties encountered}{14}

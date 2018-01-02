@@ -119,7 +119,7 @@
             
            
             
-            \vspace{1.5cm}
+            \vspace{2.5cm}
 
             \textbf {\centering Juan Jose Soriano Escobar}
             \vspace{0.5cm}
@@ -150,7 +150,7 @@
         \section{Introduction}
         The importance of Distributed Computing is increasing a lot nowadays. It refers to a large collaboration between networked processing units that allows for their processing capacity to be put at the service of a large problem. Many systems and applications are being distributed for a variety of reasons: fault-tolerance, processing performance, security as well as geographical spreading of the data or the problem requirements. 
         
-        In this project, we were asked to deploy an end-to-end big data harvesting and analysis chain which includes mining,processing and analysis of big data. The data that are being used, are taken from Twitter by using its public API to access them. These data, are tweets that represent million of opinions in many different topics. By deploying a Hadoop cluster and using MAP-REDUCE, we had to keep the most popular 10 hash-tags and words used as well as to count the number of occurrences of each word in the dataset. 
+        In this project, we were asked to deploy an end-to-end big data harvesting and analysis chain which includes mining,processing and analysis of big data. The data that are being used, are taken from Twitter by using its public API to access them. These data, are tweets that represent million of opinions in many different topics. By deploying a Hadoop cluster and using MAP-REDUCE, we had to keep the most popular 10 hash-tags and words used as well as to count the number of occurrences of each word in the dataset. By applying what was asked, a better understanding of how distributed computing works and the advantages if offers was achieved.
          
         \newpage         
         \section{Implementation Architecture}
@@ -165,19 +165,17 @@
             \label{fig:architecture}
         \end{figure}
 
-        In the Figure \ref{fig:architecture}, the global implementation that we used is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to recollect and save tweets in an MongoDB database. The idea behind this implementation is to illustrate how information could be retrieve from different sources and be processed as one data source.
+        In the Figure \ref{fig:architecture}, the global implementation that we used is Illustrated. At the bottom level, it presents how two different application in Python and Nodejs uses the Twitter API to collect and save tweets in a MongoDB database. The idea behind this implementation is to illustrate how information could be retrieve from different sources and be processed as one data source.
         Consequently, the information is saved in a MongoDB database in an Amazon Web Server that is later connected with Hadoop distributed storage.
 
-        At the same time, in Amazon Web server are three EC2 instances running with Hadoop with one NameNode as a master, assigning work to two slave nodes working as DataNodes to process the MapReduce task in parallel. Finally to create the MapReduce job, PIG framework (cite??) was implemented and installed in the name node as high-level platform which allows to use MapReduce tasks in a simple way, implementing a familiar SQL syntax.
-
-        Finally the results are stored in the NameNode server and displayed in a simple HTML file.
+        At the same time, in Amazon Web server are three EC2 instances running with Hadoop with one NameNode as a master, assigning work to two slave nodes working as DataNodes to process the MapReduce task in parallel. Finally to create the MapReduce job, PIG framework (cite??) was implemented and installed in the name node as high-level platform which allows to use MapReduce tasks in a simple way, implementing a familiar SQL syntax.Finally the results are stored in the NameNode server and displayed in a simple HTML file.
 
         
         \section{Application layer}
 
-        The application layer is related with the way how the data are retrieved and saved in the database by using Python and Javascript to access the Twitter API. In order to avoid the same implementation in two different programming languages,
+        The application layer is related with the way how the data are retrieved and saved in the database by using Python and JavaScript to access the Twitter API. In order to avoid the same implementation in two different programming languages,
         we decided to implement the solutions in two different scenarios. One implementing JavaScript without data processing and a second solution with Python  with the respective data cleaning and preprocessing, to
-        visualize how the results of the top ten words and hashtags may change with a "clean" and "noisy" data. This comparison would show clearly the importance of having clean data and the impact it might have to the final results if the data is not preproccessed before.
+        visualize how the results of the top ten words and hashtags may change with a "clean" and "noisy" data. This comparison would \textit{show} clearly \textit{the importance of having clean data} and the impact it might have to the final results if the data is not preproccessed before.
 
         The code implemented for the Python implementation can be find in the github repository: % add description?
 
@@ -185,7 +183,7 @@
 
         \subsection{Data Pre-processing}
 
-        The data preprocessing part is made by a function that receives the streamed tweet from the Twitter API and it tokenizes the tweet in words, to later remove the stop words, special characters, links, re-tweets and user tags. This step is required in order to extract the main words that potentially represent the meaning or topic of the tweet. Aditionally, Lemmatization is applied in the line \textit{13} to convert every word to the root 
+        The data preprocessing part is made by a function that receives the streamed tweet from the Twitter API and it tokenizes the tweet in words, to later remove the stop words, special characters, links, re-tweets and user tags. This step is required in order to extract the main words that potentially represent the meaning or topic of the tweet. Aditionally, Lemmatization is applied in the line \textit{14} to convert every word to the root 
         form, with the goal of grouping all the words that could semantically mean the same.
         \begin{lstlisting}[language=Python, caption= Python Cleaning Function, label={lst:dataCleaning}]
             def cleanTweet(tweet):    
@@ -206,10 +204,10 @@
                             clean_fragments.append(f)
                 return(" ".join(clean_fragments))
         \end{lstlisting}
-
+\newpage
         \subsection{Twitter API Implementation}
 
-        Implementation in Python....
+        Connecting with MongoDB, implementation in Python.
         \begin{lstlisting}[language=Python, caption= Python Implementation, label={lst:PythonImplementation}]
             class listener(StreamListener):
 
@@ -251,7 +249,7 @@ twitterStream.filter(locations=[-122.995004, 32.323198,-67.799695, 49.893813])
         \end{lstlisting}
 
 
-        Implementation in Nodejs.....
+        Connecting with MongoDB, implementation in Nodejs.
 \begin{lstlisting}[language=Javascript, caption= JAvascript Implementation, label={lst:JavascriptImplementation}]        
         const Twitter = require('twitter');
 const credentials = require('./credentials');
@@ -282,7 +280,7 @@ const client = new Twitter({
           \end{lstlisting}
         \section{Server Configuration}
 
-        As  explained in section "look up" and presented in the Figure \ref{}, the server consist of one NameNode and two DataNodes running in different Linux instances in Amazon Web Services.
+        As  explained in Implementation Architecture section and presented in the Figure \ref{fig:architecture}, the server consist of one NameNode and two DataNodes running in different Linux instances in Amazon Web Services.
 
         Besides the security rules and after the Hadoop and Java installation, it was important to configure five files:
             \begin{itemize}
@@ -361,7 +359,7 @@ const client = new Twitter({
                         </configuration>                     
                 \end{lstlisting}
             \end{itemize}
-        All the configuration files could be find in the github repository .....
+        All the configuration files could be find in the github repository.
         \begin{figure}[H]
             \centering 
             \includegraphics[width=1\linewidth]{./img/instances.png}
@@ -382,12 +380,12 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \label{fig:MapReduce}
         \end{figure}
 
-        To build the MapReduce Job, Apache Pig was used to take advantage of it easy SQL oriented approach to program, increasing the productivity and friendly for programmers that have not use Java before.
+        To build the MapReduce Job, Apache Pig was used to take advantage of its easy SQL oriented approach to program, increasing the productivity and friendly for programmers that have not use Java before.
         Ten line of code in Pig Latin are equivalent almost to 200 lines of code in Java. (http://blog.cloudera.com/wp-content/uploads/2010/01/IntroToPig.pdf)
 
-        Apache Pig is then installed in the name node and connected to YARN to manage the job request. 
+        Apache Pig is then installed in the name node and connected to \textbf{YARN} to manage the job request. 
         
-        In the listing \ref{} is provided the job use to calculate the top ten used words and the top ten hashtags. From a global overview, the COUNT in Apache Pig is equivalent to a reduce and the Filter is translated to a map.
+        Below is provided the job use to calculate the top ten used words and the top ten hashtags. From a global overview, the COUNT in Apache Pig is equivalent to a reduce and the Filter is translated to a map.
         Additionally the tokenize also represent a  map function that split a string of words into a bag of words.
 
         \begin{lstlisting}[caption= Tweet cleaning function, label={lst:dataCleaning}]
@@ -414,7 +412,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
 
         \end{lstlisting}
 
-        The first three register statements in the Pig Script is implementing the Java, MongoDB and Hadoop conectors to work across the the architecture defined for the 3 instances. Then
+        The first three register statements in the Pig Script is implementing the Java, MongoDB and Hadoop connectors to work across the the architecture defined for the 3 instances. Then
         the BSON file from the database is loaded and the tweet is saved as "text". In the following lines, the tokenize divides the tweets into words (map) to consequently group them.
         From that point it is needed to count the amount of times that a word is present in the all the tweets, using COUNT (filter).
         
@@ -422,7 +420,6 @@ MapReduce is a framework that is used to process large amount of data in a distr
         extract also the top ten hashtags.
 
         Finally with the STORE command, the results are locally saved in the server.
-
         ** Apache Pig is a platform for analyzing large data sets that consists of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. 
         The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets. 
         (https://pig.apache.org/)
@@ -430,6 +427,7 @@ MapReduce is a framework that is used to process large amount of data in a distr
         ** YARN is the architectural center of Hadoop that allows multiple data processing engines such as interactive SQL, real-time streaming, data science and batch processing to handle data stored 
         in a single platform, unlocking an entirely new approach to analytics.
         https://hortonworks.com/apache/yarn/
+		
 		\pagebreak          
         \section{Job Results}
         In figure \ref{fig: Top Words with Noise}, are shown on a screenshoot taken from a html file, the top 10 words that were retrieved from the un-processed data.
@@ -465,15 +463,22 @@ MapReduce is a framework that is used to process large amount of data in a distr
             \label{fig: Top Hashtag Dataset 2}
         \end{figure}
 
+\newpage
         \section{Conclusion}
 In this project, by using Twitter API we managed to have access to a large amount of tweets (27169 tweets retrieved using Python and 24099 tweets retrieved using Javascript). A very important step was the data cleaning since it leads to different results if the process is not done correctly. As it was also described in the project requirements, we splitted the raw data into meaningful components by taking only the root of the words, removing punctuation marks ecc.
 
- As a storage, we used MongoDB since we stored all the data there.This information is saved in an Amazon Web Server that is later connected with Hadoop distibuted Storage. Hadoop has become a key tool for managing pools of big data and supporting big data analytics applications.It takes the data,breaks the information down into separate pieces and distributes them to different nodes in a cluster, in our case in 2 slave nodes, allowing for parallel processing. The file system also copies each piece of data multiple times and distributes the copies to individual nodes, placing at least one copy on a different server rack than the others. The best advantage that we profit from using it, is the time. We processed more than 20000 tweets in less than 5 seconds
+ As a storage, we used MongoDB since we stored all the data there.This information is saved in an Amazon Web Server that is later connected with Hadoop distibuted Storage. Hadoop has become a key tool for managing pools of big data and supporting big data analytics applications.It takes the data,breaks the information down into separate pieces and distributes them to different nodes in a cluster, in our case in 2 slave nodes, allowing for parallel processing. The file system also copies each piece of data multiple times and distributes the copies to individual nodes, placing at least one copy on a different server rack than the others. The best advantage that we profit from using it, is the time. We processed more than 20000 tweets in less than 5 seconds.
 
-To express more clearly the difference between having cleaned and uncleaned data, we decided to present two types of scenarios, one where we used JavaScript to retrieve the data and we did not preprocess them, and one where we used Python to retrieve and preprocess. The differences are shown clearly. When the data is unprocessed and we apply MAP-REDUCE, the result we get when we want to find the top 10 most used words and the number of times they are found, influences the effectiveness of the whole process since we get as a result stop words that does not express the core idea of the task. Meanwhile, when the data was preprocessed, the words that we got as a result were meaningful and they expressed exactly the most used words among all the tweet.
-
+To express more clearly the difference between having cleaned and uncleaned data, we decided to present two types of scenarios, one where we used JavaScript to retrieve the data and we did not preprocess them, and one where we used Python to retrieve and preprocess. The differences are shown clearly. When the data is unprocessed and we apply MAP-REDUCE, the result we get when we want to find the top 10 most used words and the number of times they are found, influences the effectiveness of the whole process since we get as a result stop words that does not express the core idea of the task. Meanwhile, when the data was preprocessed, the words that we got as a result were meaningful and they expressed exactly the most used words among all the tweet. We would like to empathize that we gained a lot of practical experience and very good knowledge while working for this project.
+\newpage
  \section{Group member contribution}
  
+ For this project, we have had a very good coordination together. We have been working mostly in the lab in order to realize it and have discussed every difficulty and idea together. Regarding the contribution of each of us, Juan has been the one that have set up the infrastructure of the server and doing the implementation in Javascript meanwhile Redona has been working more on the Python Implementation. 
+ 
+\section{Difficulties encountered}
+
+We have encountered one difficulty that we could not solve it. It has to do with the data pre-processing part. We had removed the triple dots ("...") as you can also see in section C1 at the code, line 10 but actually the triple dots were showing at the results. We also tried another way to express it after searching for this problem (f=re.sub("[\.]"*3, " ")) but still without success. We had to implement manually the replacement of the dots in the text with empty spaces. What was strange for us, is the fact that even if we filtered the data to remove the single dot, it was still showing when we had triple ones. Logically it should work even when we have only one dot (concatation of 3 dots). For the rest of difficulties we have encountered, we managed to solve them. 
+ \newpage
     \bibliography{report}
     \bibliographystyle{ieeetr}
     \nocite{*}
