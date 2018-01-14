@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{pig}
+Yahoo, ``{Cloudera} introfuction to pig,'' 2009.
+
+\bibitem{pig1}
+A.~Hadoop, ``Apache pig intriduction,'' 2017.
+
+\bibitem{yarn}
+HORTONWORKS, ``Apache hadoop yarn,'' 2017.
+
+\bibitem{LabManual}
+N.~Deligiannis, D.~M. Nguyen, and T.~D. Huu, {\em Project Guidelines}.
+\newblock Vrije Univesiteit Brussel, 12 2017.
+
+\bibitem{ClassNotes}
+N.~Deligiannis, {\em Course Slides}.
+\newblock Vrije Univesiteit Brussel, 12 2017.
+
+\end{thebibliography}
