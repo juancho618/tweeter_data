@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.13)  2 JAN 2018 01:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.13)  14 JAN 2018 17:24
 entering extended mode
 **./report.tex
 (report.tex
@@ -182,9 +182,13 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count117
 \c@blind@pangramcount=\count118
 \c@blind@pangrammax=\count119
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-Package color Info: Redefining color cyan on input line 31.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+Package color Info: Redefining color cyan on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
@@ -196,18 +200,18 @@ LaTeX Warning: Label `lst:dataCleaning' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
@@ -322,10 +326,10 @@ Package caption Info: End \AtBeginDocument code.
 <./img/vub.png, id=1, 542.025pt x 368.87813pt>
 File: ./img/vub.png Graphic file (type png)
 <use ./img/vub.png>
-Package pdftex.def Info: ./img/vub.png  used on input line 115. on input line 1
-15.
+Package pdftex.def Info: ./img/vub.png  used on input line 116. on input line 1
+16.
 Package pdftex.def Info: Requested size: 241.84842pt x 164.59209pt on input lin
-e 115.
+e 116.
 [1
 
 {C:/Users/Redona/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/vub.
@@ -351,37 +355,47 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./img/architecture.jpg, id=21, 256.3176pt x 220.1826pt>
 File: ./img/architecture.jpg Graphic file (type jpg)
 <use ./img/architecture.jpg>
-Package pdftex.def Info: ./img/architecture.jpg  used on input line 162. on inp
-ut line 162.
+Package pdftex.def Info: ./img/architecture.jpg  used on input line 163. on inp
+ut line 163.
 Package pdftex.def Info: Requested size: 483.69684pt x 415.51231pt on input lin
-e 162.
+e 163.
  [4 <./img/architecture.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 197
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 197.
+Underfull \hbox (badness 5533) in paragraph at lines 181--184
+[]\OT1/cmr/m/n/10 The code im-ple-mented for the Python im-ple-men-ta-tion can 
+be find in the github repos-i-tory:
+ []
 
+
+Underfull \hbox (badness 6001) in paragraph at lines 185--188
+[]\OT1/cmr/m/n/10 The code im-ple-mented for the Nodejs im-ple-men-ta-tion can 
+be find in the github repos-i-tory:
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 203
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 203.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbar' on input line 197.
+(Font)              for symbol `textbar' on input line 203.
 
 [5] [6]
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 271
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 281
 .
-LaTeX Font Info:    No file OMLcmss.fd. on input line 271.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 281.
 
 
 LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 271.
+(Font)              for symbol `textgreater' on input line 281.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 287.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 297.
 
 ("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 287.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 297.
 
 [7]
 Missing character: There is no ‚ in font cmr10!
@@ -390,87 +404,97 @@ Missing character: There is no ê in font cmr10!
 Missing character: There is no ‚ in font cmss9!
 Missing character: There is no Ä in font cmss9!
 Missing character: There is no ê in font cmss9!
-<./img/instances.png, id=43, 1317.92375pt x 134.5025pt>
+<./img/instances.png, id=44, 1317.92375pt x 134.5025pt>
 File: ./img/instances.png Graphic file (type png)
 <use ./img/instances.png>
-Package pdftex.def Info: ./img/instances.png  used on input line 365. on input 
-line 365.
+Package pdftex.def Info: ./img/instances.png  used on input line 374. on input 
+line 374.
 Package pdftex.def Info: Requested size: 483.69684pt x 49.36287pt on input line
- 365.
+ 374.
  [8]
-<./img/MapReduce.png, id=47, 635.976pt x 310.761pt>
+<./img/MapReduce.png, id=48, 635.976pt x 310.761pt>
 File: ./img/MapReduce.png Graphic file (type png)
 <use ./img/MapReduce.png>
-Package pdftex.def Info: ./img/MapReduce.png  used on input line 377. on input 
-line 377.
+Package pdftex.def Info: ./img/MapReduce.png  used on input line 386. on input 
+line 386.
 Package pdftex.def Info: Requested size: 483.69684pt x 236.35152pt on input lin
-e 377.
- [9 <./img/instances.png> <./img/MapReduce.png>] [10]
-<./img/topwordswithnoise.jpeg, id=55, 1286.8075pt x 594.22pt>
+e 386.
+
+
+LaTeX Warning: Citation `Pig' on page 9 undefined on input line 393.
+
+[9 <./img/instances.png> <./img/MapReduce.png>] [10]
+<./img/topwordswithnoise.jpeg, id=57, 1286.8075pt x 594.22pt>
 File: ./img/topwordswithnoise.jpeg Graphic file (type jpg)
 <use ./img/topwordswithnoise.jpeg>
-Package pdftex.def Info: ./img/topwordswithnoise.jpeg  used on input line 436. 
-on input line 436.
+Package pdftex.def Info: ./img/topwordswithnoise.jpeg  used on input line 444. 
+on input line 444.
 Package pdftex.def Info: Requested size: 483.69684pt x 223.35783pt on input lin
-e 436.
-<./img/tophashtagdataset1.jpeg, id=56, 1317.92375pt x 587.19376pt>
+e 444.
+<./img/tophashtagdataset1.jpeg, id=58, 1317.92375pt x 587.19376pt>
 File: ./img/tophashtagdataset1.jpeg Graphic file (type jpg)
 <use ./img/tophashtagdataset1.jpeg>
-Package pdftex.def Info: ./img/tophashtagdataset1.jpeg  used on input line 444.
- on input line 444.
+Package pdftex.def Info: ./img/tophashtagdataset1.jpeg  used on input line 452.
+ on input line 452.
 Package pdftex.def Info: Requested size: 483.69684pt x 215.50215pt on input lin
-e 444.
-<./img/topwordswithoutnoise.jpeg, id=57, 1285.80376pt x 601.24625pt>
+e 452.
+<./img/topwordswithoutnoise.jpeg, id=59, 1285.80376pt x 601.24625pt>
 File: ./img/topwordswithoutnoise.jpeg Graphic file (type jpg)
 <use ./img/topwordswithoutnoise.jpeg>
-Package pdftex.def Info: ./img/topwordswithoutnoise.jpeg  used on input line 45
-2. on input line 452.
+Package pdftex.def Info: ./img/topwordswithoutnoise.jpeg  used on input line 46
+0. on input line 460.
 Package pdftex.def Info: Requested size: 483.69684pt x 226.1732pt on input line
- 452.
+ 460.
  [11 <./img/topwordswithnoise.jpeg> <./img/tophashtagdataset1.jpeg>]
-<./img/tophashtagdataset2.jpeg, id=61, 1312.905pt x 589.20125pt>
+<./img/tophashtagdataset2.jpeg, id=63, 1312.905pt x 589.20125pt>
 File: ./img/tophashtagdataset2.jpeg Graphic file (type jpg)
 <use ./img/tophashtagdataset2.jpeg>
-Package pdftex.def Info: ./img/tophashtagdataset2.jpeg  used on input line 460.
- on input line 460.
+Package pdftex.def Info: ./img/tophashtagdataset2.jpeg  used on input line 468.
+ on input line 468.
 Package pdftex.def Info: Requested size: 483.69684pt x 217.07503pt on input lin
-e 460.
+e 468.
  [12 <./img/topwordswithoutnoise.jpeg> <./img/tophashtagdataset2.jpeg>] [13] [1
-4] (report.bbl) [15]
+4]
+No file report.bbl.
 (report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5286 strings out of 493312
- 81199 string characters out of 3129391
- 476336 words of memory out of 3000000
- 8736 multiletter control sequences out of 15000+200000
- 11983 words of font info for 46 fonts, out of 3000000 for 9000
+ 5352 strings out of 493312
+ 81921 string characters out of 3129391
+ 477443 words of memory out of 3000000
+ 8799 multiletter control sequences out of 15000+200000
+ 12151 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,49p,1436b,1586s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,49p,1440b,1586s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbx10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Redona/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Redona/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
-Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
-b><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmss9.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmssbx10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Redona/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Redona/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
-rs/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb>
-Output written on report.pdf (16 pages, 989969 bytes).
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Redona/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Redona/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users
+/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmss9.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Redona/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Redona/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Use
+rs/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
+10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmtt9.pfb>
+Output written on report.pdf (15 pages, 1005956 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
